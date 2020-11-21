@@ -15,6 +15,7 @@
     android:padding="10dp">
 
 
+    <!-- 식 -->
     <TextView
         android:id="@+id/tvExpr"
         android:layout_width="match_parent"
@@ -23,6 +24,7 @@
         android:textSize="20sp"
         tools:text="expr" />
 
+    <!-- 결과값 -->
     <TextView
         android:id="@+id/tvResult"
         android:layout_width="match_parent"
@@ -32,6 +34,7 @@
         android:textStyle="bold"
         tools:text="result" />
 
+    <!-- 구분선 -->
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"

@@ -3,11 +3,8 @@ package com.devhyeon.mvpSample.Usage;
 import android.app.Activity;
 import android.util.Log;
 
-import androidx.recyclerview.widget.LinearLayoutManager;
-
 import com.devhyeon.mvpSample.Calculator.CalcModel;
 
-import java.util.ArrayList;
 
 /**
  * Created By DevHyeon on 2020.11.21

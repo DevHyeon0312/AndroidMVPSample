@@ -11,8 +11,6 @@ import com.devhyeon.mvpSample.Calculator.CalcModel;
 import com.devhyeon.mvpSample.R;
 import com.devhyeon.mvpSample.databinding.ActivityUsageBinding;
 
-import java.util.ArrayList;
-
 /**
  * Created By DevHyeon on 2020.11.21
  * DevHyeon Blog : https://www.devhyeon.com

@@ -14,6 +14,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".Usage.UsageActivity">
 
+    <!-- 리스트 -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvUsage"
         android:layout_width="0dp"
