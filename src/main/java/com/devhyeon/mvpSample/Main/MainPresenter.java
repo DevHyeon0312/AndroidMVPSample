@@ -1,5 +1,6 @@
 package com.devhyeon.mvpSample.Main;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 
@@ -37,7 +38,9 @@ class MainPresenter {
     }
 
     void onStartActivity(Activity activity) {
-        activity.startActivity(new Intent(activity, UsageActivity.class));
+        Intent intent = new Intent(activity, UsageActivity.class);
+        intent.putExtra("CalcModel",calcModel);
+        activity.startActivity(intent);
     }
 
     void getTime() {
@@ -76,19 +79,16 @@ class MainPresenter {
         }
     }
 
+    @SuppressLint("DefaultLocale")
     private void TimeLogic() {
         Calendar calendar = Calendar.getInstance(); // 칼렌다 변수
-        int year = calendar.get(Calendar.YEAR); // 년
-        int month = calendar.get(Calendar.MONTH); // 월
-        int day = calendar.get(Calendar.DAY_OF_MONTH); // 일
-        int hour = calendar.get(Calendar.HOUR_OF_DAY); // 시
-        int minute = calendar.get(Calendar.MINUTE); // 분
-        int second = calendar.get(Calendar.SECOND); // 초
-        mainModel.setNowTime(year + "년 " +
-                month + "월 " + day + "일 " +
-                hour + "시 " + minute + "분 " +
-                second + "초"
-        );
+        int year = calendar.get(Calendar.YEAR);
+        int month = calendar.get(Calendar.MONTH);
+        int day = calendar.get(Calendar.DAY_OF_MONTH);
+        int hour = calendar.get(Calendar.HOUR_OF_DAY);
+        int minute = calendar.get(Calendar.MINUTE);
+        int second = calendar.get(Calendar.SECOND);
+        mainModel.setNowTime(String.format("%d.%d.%d %d시 %d분 %d초",year,month,day,hour,minute,second));
         mainView.setTime(mainModel.getNowTime());
     }
 

@@ -1,5 +1,9 @@
 package com.devhyeon.mvpSample.Usage;
 
+import com.devhyeon.mvpSample.Calculator.CalcModel;
+
+import java.util.ArrayList;
+
 /**
  * Created By DevHyeon on 2020.11.21
  * DevHyeon Blog : https://www.devhyeon.com
@@ -7,5 +11,9 @@ package com.devhyeon.mvpSample.Usage;
  * CalcMain Activity
  * */
 public interface UsageView {
+
+    void setAdapter(UsageAdapter usageAdapter);
+
+    void updateAdapter(UsageAdapter usageAdapter, CalcModel item);
 
 }
