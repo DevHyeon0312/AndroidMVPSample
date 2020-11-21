@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../DevHyeon MVP Sample.iml" filepath="$PROJECT_DIR$/../DevHyeon MVP Sample.iml" group="DevHyeon MVP Sample" />
+      <module fileurl="file://$PROJECT_DIR$/app.iml" filepath="$PROJECT_DIR$/app.iml" group="DevHyeon MVP Sample/app" />
+    </modules>
+  </component>
+</project>
